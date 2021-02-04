@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    
+</head>
+<body>
+    <section class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+            <h1 class="text-white text-capitalize">javascript dom</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice1</h5></button></div>
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice2</h5></button></div>
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice3</h5></button></div>
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice4</h5></button></div>
+        </div>
+        <div class="row mt-0">
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice5</h5></button></div>
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice6</h5></button></div>
+            <div class="col-3 px-0"><button><h5 class="text-primary">Exercice7</h5></button></div>
+            <div class="col-3 px-0"></div>
+        </div>
+        <div id="exercice1" class="row mt-5 bg-dark">
+            <div class="container1 ml-5 mr-5 mt-5 pt-5 pb-5">
+                <h2 class="">titre</h2>
+                <p>list de propriété et méthode à retrouver dans la documentation:</p>
+                <ul>
+                    <li><P>innerText</P></li>
+                    <li><p>innerHTML</p></li>
+                    <li><p>querySelector()</p></li>
+                    <li><p>querySelectorAll()</p></li>
+                    <li><p>style</p></li>
+                    <li><p>classList</p></li>
+                </ul>
+                <p>Changer le contenu du h2 par "le titre modifié"</p>
+                <p>changer la couleur du h2 (la couleur que vous voulez)</p>
+                <p>Ajouter une class background bootstrap au h2</p>
+            </div>
+        </div>
+        <div id="exercice2" class="row mt-5 bg-dark">
+            <div class="container2 ml-5 mr-5 d-flex align-items-center pb-5 pt-5">
+                <p>Mettre un écouteur d'évenement sur les boutons nav et changer le panel en conséquence</p>
+             </div>
+        </div>
+        <div id="exercice3" class="row mt-5 bg-dark">
+            <div class="container3 ml-5 mr-5 d-flex flex-column pb-5 pt-5">
+                <h2>Welcome <span class="inconnu">inconnu</span></h2>
+                <p>écriver dans l'input ci-dessous le nom de la personne que vous voullez acceuillir</p>
+                <p>lorsque vous cliquez sur le bouton "go" le nom que vous avez ajoutez dans l'input sera mis dans le span du h2 et l'input sera alors vidé de</p>
+                <p>tout contenu. Attention, interdiction de toucher à l'html.</p>
+                <div class="row">
+                    <input type="text">
+                    <button id="go" class="ml-2"><span>go</span></button>
+                </div>
+            </div>
+        </div>
+        <div id="exercice4" class="row mt-5 bg-dark">
+            <div class="container4 ml-5 mr-5 d-flex flex-column pb-5 pt-5">
+                <h2 class="mb-4">Déplacer les éléments</h2>
+                <div class="row">
+                    <div class="bloc1 bg-primary mr-auto d-flex justify-content-center align-items-center"><div class="carreRouge1"></div></div>
+                    <div class="bloc2 bg-primary ml-auto d-flex justify-content-center align-items-center"><div class="carreRouge2"></div></div>
+
+                </div>
+                <div class="row2 d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
+                    <button class="bg-warning mb-4 px-4 py-3"><span class="text-white">change place</span></button>
+                    <button class="bg-success px-4 py-3"><span id="click" class="text-white">nombre de click 0</span></button>
+
+                </div>
+            </div>
+        </div>
+        <div id="exercice5" class="row mt-5 bg-dark">
+            <div class="container5 ml-5 mr-5 d-flex flex-column pb-5 pt-5">
+                <h2 class="mb-4">Génerer les éléments du DOM</h2>
+                <p>Cliquer sur le bouton ci dessous pour génerer des oeufs.</p>
+                <button id="oeuf" class="bg-success px-0"><span class="text-white">Ajouter un oeuf</span></button>
+                <div id="boite" class="row">
+                    <img src="./public/images/egg.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+        <div id="exercice6" class="row mt-5 bg-dark">
+            <div class="container6 ml-5 mr-5 d-flex flex-column pb-5 pt-5">
+                <h2 class="mb-4">Création calculatrice</h2>
+                <h2 class="mb-4">Niveau 1</h2>
+                <div class="row d-flex align-items-center">
+                    <input type="text">
+                    <span class="ml-2 mr-2">+</span>
+                    <input type="text">
+                    <button id="plus" class="ml-2 px-2 py-1">=</button>
+                    <span class="ml-2" id="reponse">?</span>
+                </div>
+                <h2 class="mb-4">Niveau 2</h2>
+                <div class="calculette">
+                    <div class="row d-flex justify-content-end mr-5 mt-3">
+                        <h4 id="?" class="text-white">?</h4>
+                        <h4 id="element1" class="text-white"></h4>
+                        <h4 id="operateur" class="text-white"></h4>
+                        <h4 id="element2" class="text-white"></h4>
+                        <h4 id="reponse2" class="text-white"></h4>
+
+                        
+
+                    </div>
+                    <input type="text">
+                    <div class="row2 d-flex justify-content-between mt-4 ml-5 mr-5">
+                        <button id="1" class="px-4 py-3">1</button>
+                        <button id="2" class="px-4 py-3">2</button>
+                        <button id="3" class="px-4 py-3">3</button>
+                        <button id="+" class="px-4 py-3 bg-primary"><span class="text-white">+</span></button>
+
+                    </div>
+                    <div class="row3 d-flex justify-content-between mt-5 ml-5 mr-5">
+                        <button id ="4" class="px-4 py-3">4</button>
+                        <button id="5" class="px-4 py-3">5</button>
+                        <button id="6" class="px-4 py-3">6</button>
+                        <button id="-" class="px-4 py-3 bg-primary"><span class="text-white">-</span></button>
+
+                    </div>
+                    <div class="row4 d-flex justify-content-between mt-5 ml-5 mr-5">
+                        <button id="7" class="px-4 py-3">7</button>
+                        <button id="8" class="px-4 py-3">8</button>
+                        <button id="9" class="px-4 py-3">9</button>
+                        <button id="*" class="px-4 py-3 bg-primary"><span class="text-white">*</span></button>
+
+                    </div>
+                    <div class="row5 d-flex justify-content-between mt-5 ml-5 mr-5">
+                        <button id="C" class="px-4 py-3 bg-danger text-white">C</button>
+                        <button id="0" class="px-4 py-3">0</button>
+                        <button id ="=" class="px-4 py-3 bg-success text-white">=</button>
+                        <button id="/" class="px-4 py-3 bg-primary text-white">/</button>
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div id="exercice7" class="row mt-5 bg-dark">
+            <div class="container7 ml-5 mr-5 d-flex flex-column pb-5 pt-5 justify-content-center">
+                <h2 class="mb-4">TodoList</h2>
+                <input type="text" placeholder="Que dois-je faire?">
+                <div class="row7 d-flex justify-content-center mt-4">
+                    <button id="toutes" class="bg-success text-white border-0 px-3 py-2">Toutes</button>
+                    <button id="completer" class="bg-success text-white border-0 px-3 py-2 ml-3 mr-3">Completées</button>
+                    <button id="faire" class="bg-success text-white border-0 px-3 py-2">A faire</button>
+
+                </div>
+                <div class="row" id="liste">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
